@@ -1,0 +1,351 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: rgba(250, 250, 250, 1);
+  padding: 10rem 5.625rem 0rem 5.625rem;
+}
+
+.preview {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.5rem;
+}
+
+.preview__sidebar {
+  width: 100%;
+  max-width: 15.625rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem 1.125rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.preview__navigation-title {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(34, 34, 34, 1);
+  margin-bottom: 1.125rem;
+}
+
+.preview__navigation-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.preview__navigation-link {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: rgba(34, 34, 34, 1);
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.preview__navigation-link:hover {
+  background-color: rgba(25, 70, 186, 0.85);
+  border-radius: 0.25rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.preview__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}
+
+.preview__image-big {
+  height: 18rem;
+  width: 100%;
+  background-color: rgba(25, 70, 186, 0.85);
+  overflow: hidden;
+  position: relative;
+}
+
+.preview__image-red-first-round {
+  position: absolute;
+  width: 13.125rem;
+  height: 13.125rem;
+  background-image: url("./assets/banners/blue-banner-red-round-first.png");
+  bottom: -4.75rem;
+  right: -2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.preview__image-red-second-round {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  background-image: url("./assets/banners/blue-banner-red-round-second.png");
+  bottom: 2rem;
+  right: 19.25rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.preview__image-red-third-round {
+  position: absolute;
+  width: 4.375rem;
+  height: 4.375rem;
+  background-image: url("./assets/banners/blue-banner-red-round-third.png");
+  top: 5.375rem;
+  right: 9.75rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.preview__image-red-fourth-round {
+  position: absolute;
+  width: 1.625rem;
+  height: 1.625rem;
+  background-image: url("./assets/banners/blue-banner-red-round-fourth.png");
+  top: 3.375rem;
+  right: 2.375rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.preview__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 1.75rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__image-big-title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  max-width: 34.625rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1rem;
+}
+
+.preview__image-big-subtitle {
+  font-weight: 300;
+  font-size: 0.875rem;
+  max-width: 26rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.preview__image-big-statistics {
+  display: flex;
+  column-gap: 1.25rem;
+  margin-top: 3.375rem;
+}
+
+.preview__image-big-box {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 1);
+}
+
+.preview__image-big-box > span {
+  font-weight: 700;
+  font-size: 2.125rem;
+}
+
+.preview__image-big-box > p {
+  font-weight: 300;
+  font-size: 0.5rem;
+  margin-bottom: 0.125rem;
+}
+
+.preview__image-big-box--first > p {
+  max-width: 10rem;
+}
+
+.preview__image-big-box--second > p {
+  max-width: 8.5rem;
+}
+
+.preview__image-small {
+  position: relative;
+  height: 18rem;
+  width: calc(50% - 1.5rem);
+  overflow: hidden;
+}
+
+.preview__image-small--green {
+  background-color: rgba(56, 196, 99, 1);
+}
+
+.preview__image-small--red {
+  background-color: rgba(242, 31, 91, 1);
+}
+
+.preview__image-small-red-first-round {
+  position: absolute;
+  width: 11.125rem;
+  height: 11.125rem;
+  bottom: -6.5rem;
+  right: -2.75rem;
+  z-index: 1;
+  background-image: url("assets/banners/green-banner-red-round-first.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview__image-small-red-second-round {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  bottom: 5.625rem;
+  right: 4.25rem;
+  z-index: 1;
+  background-image: url("assets/banners/green-banner-red-round-second.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview__image-small-red-third-round {
+  position: absolute;
+  width: 3.125rem;
+  height: 3.125rem;
+  bottom: 1.25rem;
+  right: 9.625rem;
+  z-index: 1;
+  background-image: url("assets/banners/green-banner-red-round-third.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview__image-small-red-fourth-round {
+  position: absolute;
+  width: 0.875rem;
+  height: 0.875rem;
+  bottom: 9.625rem;
+  right: 1.125rem;
+  z-index: 1;
+  background-image: url("assets/banners/green-banner-red-round-fourth.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.preview__image-small-title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1.75rem;
+}
+
+.preview__image-small-subtitle {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.preview__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  height: 2.5rem;
+  width: 6.5rem;
+  margin-top: auto;
+}
+
+.preview__image-small-yellow-first-round {
+  position: absolute;
+  width: 11.125rem;
+  height: 11.125rem;
+  bottom: -6.5rem;
+  right: -2.375rem;
+  background-image: url("assets/banners/red-banner-yellow-round-first.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.preview__image-small-yellow-second-round {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  bottom: 5.625rem;
+  right: 4.625rem;
+  background-image: url("assets/banners/red-banner-yellow-round-second.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.preview__image-small-yellow-third-round {
+  position: absolute;
+  width: 3.125rem;
+  height: 3.125rem;
+  bottom: 1.25rem;
+  right: 10rem;
+  background-image: url("assets/banners/red-banner-yellow-round-third.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.preview__image-small-yellow-fourth-round {
+  position: absolute;
+  width: 0.875rem;
+  height: 0.875rem;
+  bottom: 9.625rem;
+  right: 1.5rem;
+  background-image: url("assets/banners/red-banner-yellow-round-fourth.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8.125rem;
+  margin-bottom: 8.125rem;
+}
+
+.offer__box {
+  width: 17.875rem;
+  height: 12.25rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0.5rem;
+}
+
+.offer__box-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.offer__box-description {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 2;
+  color: rgba(196, 196, 196, 1);
+}
